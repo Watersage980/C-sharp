@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp7
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        float C;
+        float F;
+        private void btncovert_Click(object sender, EventArgs e)
+        {
+            C=float.Parse(txtcelsius.Text);
+            F = (9 * C + 160) / 5;
+            txtfaren.Text = F.ToString();
+        }
+    }
+}
